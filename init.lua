@@ -1,4 +1,4 @@
-graphics = require("graphics.lua")
+graphics = import("graphics")
 
 graphics.tellgpu("setResolution", graphics.tellgpu("getResolution"))
 
