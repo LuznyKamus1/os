@@ -1,4 +1,4 @@
-require "graphics"
+require "graphics.lua"
 
 graphics.tellgpu("setResolution", graphics.tellgpu("getResolution"))
 
