@@ -1,4 +1,4 @@
-require graphics
+require "graphics"
 
 graphics.tellgpu("setResolution", graphics.tellgpu("getResolution"))
 
