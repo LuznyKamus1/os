@@ -19,7 +19,7 @@ local function tellgpu(cmd, arg, ...)
     return res
 end
 
-graphics.tellgpu("setResolution", graphics.tellgpu("getResolution"))
+tellgpu("setResolution", tellgpu("getResolution"))
 
 while true do
     tellgpu("setBackground", 0xFFFFFF)
