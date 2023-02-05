@@ -4,7 +4,7 @@ local component = component or require("component")
 local gpu = component.list("gpu")()
 local screen = component.list("screen")()
 
-public function tellgpu(cmd, arg, ...)
+local function tellgpu(cmd, arg, ...)
     local res = {}
     local n = 1
     for address in component.list("screen") do
