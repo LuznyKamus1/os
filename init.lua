@@ -12,7 +12,7 @@ local function tellgpu(cmd, arg, ...)
         if type(arg) == "table" then
             res[#res + 1] = {component.invoke(gpu, cmd, table.unpack(arg[n]))}
         else
-            res[#res + 1] = {component.invoke(gpu, cmd, arg, ..)}
+            res[#res + 1] = {component.invoke(gpu, cmd, arg, ...)}
         end
         n = n+1
     end
